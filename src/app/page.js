@@ -9,8 +9,8 @@ export default function Home() {
   const year=new Date().getFullYear()
   return (
     <div>
-      <Header />
-      <Hero />
+    
+    <Hero />
       <HomeMenu />
       <section className="text-center my-16">
         <SectionHeader
@@ -33,9 +33,7 @@ export default function Home() {
           <a className="text-4xl underline text-grb" href="tel:+917987913123">+91 79889 13123</a>
         </div>
       </section>
-      <footer className="border-t p-8 text-center text-grb mt-16">
-&copy; {year} All Right Reserved
-      </footer>
+      
     </div>
   );
 }

@@ -15,7 +15,11 @@ module.exports = {
       back:'rgb(209 213 219)',
       wh:"#FFFFFF",
       bl:"#000000",
-      grb:"#9E9E9E"
+      grb:"#9E9E9E",
+      gray700:"#616161",
+      gray300:" #E0E0E0",
+      gray100:" #F5F5F5",
+      red400:"#EF5350"
     },
   },
   plugins: [],
