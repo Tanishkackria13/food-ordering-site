@@ -1,4 +1,5 @@
 "use client";
+import {signIn} from "next-auth/react";
 import React,{useState} from 'react';
 import Link from "next/link";
 import Image from 'next/image';
@@ -57,7 +58,7 @@ setCreatingUser(false);
                or Login with provider
             </div>
 
-            <button className='flex gap-4 justify-center' >
+            <button className='flex gap-4 justify-center' onClick={()=>signIn('google',{callbackUrl:'/'})} >
               <Image src={'/google.png'} alt={''} width={32} height={32}/>
               Login With Google</button>
               <div className='text-center my-4 text-grb border-t pt-4'>
